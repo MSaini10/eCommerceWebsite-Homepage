@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:700,500');
+
+/**************************
+Quick Notes for Styling
+
+
+red:#f81344
+greyish-white:#f3f3f3;
+white: #fff;
+black: #000;
+
+h1, buttons font: Roboto;
+h2 & body font: Roboto Slab;
+****************************/
+
+
+/*********************
+Small Phone (200px-319px)
+*********************/
+
+body {
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size:11px;
+    margin:0;
+    line-height: 1.5;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+header h1, header h2, footer {				/*use this is assignment in footer*/
+	text-align: center;
+}
+
+header {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 13px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 14px;
+	font-weight: 500px;
+}
+
+section {
+	min-height: 180px;
+	padding: 20px;
+}
+
+footer {
+	background-color: #000;
+	min-height: 32px;
+	padding: 32px;
+}
+
+input[type=email] {
+	min-width: 100%;
+	display: block;
+	border: 2px solid rgba(0,0,0,0.2);
+	height: 30px;
+}
+
+input[type=submit] {
+	background: #F81344;
+	border: 2px solid #F81344;
+	color: #FFF;
+	font-size: 12px;
+	min-width: 100%;
+	padding: 7% 18%;
+}
+
+input[type=submit]:hover {
+	background: #000;
+	border: 2px solid #000;
+	color: #F81334;
+}
+
+::-webkit-input-placeholder {color: #F81334; padding-left: 10px;}
+::-moz-input-placeholder {color: #F81334; padding-left: 10px;}
+input-placeholder {color: #F81334; padding-left: 10px;}
+
+a {
+	font-size: 16px;
+	text-decoration: none;						/*no underline*/
+}
+
+a:link {
+	color: #FFF;
+}
+
+a:visited {
+	color: #FFF;
+}
+
+a:hover {
+	color: #000;
+}
+
+
+/****************************
+ID's
+******************************/
+#container {
+	max-width: 319px; 
+}
+
+/****************************
+Classes
+******************************/
+
+.red {
+	background-color: #F81344;
+}
+
+.white {
+	background-color: #F3F3F3;
+	color: #000;
+}
+
+.white h1 {
+	color: #F81344;
+}
+
+.bkInfo { 						/*actual way to add image in a special section instead of body*/
+		background: url('../images/hero.jpg') no-repeat top center;
+		background-size: cover;
+		min-height: 350px;
+}
+
+.button {
+	border: 2px solid #fff;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 10px 20px;
+	text-transform: capitalize;
+
+}
+
+.button:hover {
+	background: #F81344;
+}
+
+.centerButton {
+	margin: 64px auto;
+	text-align: center;
+}
+
+/*********************
+Smartphone (320px-374px)
+*********************/
+@media only screen and (min-width: 320px) {
+
+body {
+	font-size: 16px;
+}
+
+header h1 {
+	font-size: 40px;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+section {
+	min-height: 220px;
+}
+
+input[type=submit] {
+	font-size: 16px;
+}
+
+/****************************
+ID's Classes
+******************************/
+
+#container {
+	max-width: 374px;
+}
+}
+
+/*********************
+Smartphone (375px-424px)
+*********************/
+@media only screen and (min-width: 375px) {
+
+header h1 {
+	font-size: 45px;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 23px;
+}
+
+
+
+/****************************
+ID's Classes
+******************************/
+
+#container {
+	max-width: 767px;
+}
+
+.button {
+	font-size: 17px;
+}
+}
+
+
+/*********************
+Tablet (768px-1023px)
+*********************/
+@media only screen and (min-width: 768px) {
+
+header h1 {
+	font-size: 85px;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+/****************************
+ID's Classes
+******************************/
+#container {
+	max-width: 1023px;
+}
+}
+
+/*********************
+Laptop (1024px +)
+*********************/
+@media only screen and (min-width: 1024px) {
+
+header h1 { 
+	font-size: 85px; }
+
+h1 {
+	font-size: 75px;
+	margin-top: 15px;
+}
+
+h2 {
+	font-size: 65px;
+}
+/****************************
+ID's Classes
+******************************/
+#container {
+	max-width: 2560px;
+}
+
+.bkInfo {
+	min-height: 850px;
+}
+
+@media only screen and (min-width: 1920px) {
+
+.bkInfo {min-height: 1250px;}
+
+header 
+{
+	margin-top: 200px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
